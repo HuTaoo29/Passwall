@@ -10,6 +10,7 @@ DOMAIN-SUFFIX,longbridgehk.com
 DOMAIN-SUFFIX,longbridge.cn
 DOMAIN-SUFFIX,app.longbridgehk.com
 DOMAIN-SUFFIX,longbridgeapp.com
+DOMAIN-SUFFIX,lbkrs.com
 
 # OpenAPI 核心（行情、交易、下单最重要）
 DOMAIN-SUFFIX,openapi.longbridge.com
