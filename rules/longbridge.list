@@ -27,3 +27,6 @@ DOMAIN,api-gl.lbkrs.com
 # ======================
 IP-CIDR,47.243.107.98/32,no-resolve
 IP-CIDR,8.218.30.161/32,no-resolve
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR,47.106.99.0/24,no-resolve
+IP-CIDR,47.106.103.0/24,no-resolve
