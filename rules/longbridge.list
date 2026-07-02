@@ -1,18 +1,30 @@
-# ======================
-# 长桥证券 Longbridge 分流规则
-# 2026.6.19
-# ======================
+# Longbridge / LongPort / 长桥
+rules:
+  # LongBridge 主体系
+  - DOMAIN-SUFFIX,longbridge.com,Proxy
+  - DOMAIN-SUFFIX,longbridge.cn,Proxy
+  - DOMAIN-SUFFIX,longbridge.hk,Proxy
+  - DOMAIN-SUFFIX,longbridge.sg,Proxy
+  - DOMAIN-SUFFIX,longbridge.global,Proxy
+  - DOMAIN-SUFFIX,longbridgehk.com,Proxy
 
-# 核心主站与登录
-DOMAIN-SUFFIX,longbridge.com
-DOMAIN-SUFFIX,longbridge.hk
-DOMAIN-SUFFIX,longbridgehk.com
-DOMAIN-SUFFIX,longbridge.cn
-DOMAIN-SUFFIX,longbridgeapp.com
-DOMAIN-SUFFIX,longbridge.app
-DOMAIN-SUFFIX,lbkrs.com
-DOMAIN-SUFFIX,lbctrl.com
+  # LongPort / 历史 App / 旧 OpenAPI 体系
+  - DOMAIN-SUFFIX,longportapp.com,Proxy
+  - DOMAIN-SUFFIX,longportapp.cn,Proxy
+  - DOMAIN-SUFFIX,longbridgeapp.com,Proxy
 
-# 辅助域名
-DOMAIN-SUFFIX,pbkrs.com
-DOMAIN-SUFFIX,longportapp.com
+  # 长桥资源、活动、公开文件、App 资源域名
+  - DOMAIN-SUFFIX,lbkrs.com,Proxy
+  - DOMAIN-SUFFIX,lbctrl.com,Proxy
+
+  # 开发者文档 / SDK 文档
+  - DOMAIN,longbridge.github.io,Proxy
+  - DOMAIN,longportapp.github.io,Proxy
+
+  # 活动页 / 下载页 / H5 营销页相关
+  - DOMAIN,longbridge.activity.wbrks.com,Proxy
+
+  # Longbridge Whale / 机构端 / B2B 技术服务
+  - DOMAIN-SUFFIX,longbridgewhale.com,Proxy
+  - DOMAIN-SUFFIX,longportwhale.com,Proxy
+  - DOMAIN-SUFFIX,longbridge.cloud,Proxy
