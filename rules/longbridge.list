@@ -1,5 +1,5 @@
 # Longbridge / LongPort / 长桥
-rules:
+
   # LongBridge 主体系
   - DOMAIN-SUFFIX,longbridge.com
   - DOMAIN-SUFFIX,longbridge.cn
