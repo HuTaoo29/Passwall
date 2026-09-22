@@ -4,10 +4,20 @@ DOMAIN-SUFFIX,xxoojoke.com
 DOMAIN-SUFFIX,litangkj.com
 DOMAIN-SUFFIX,qianjibillimage.kodo-accelerate.cn-south-1.qiniucs.com
 
-#嘉信理财
+#嘉信理财 / thinkorswim
 DOMAIN-KEYWORD,schwab
 DOMAIN-KEYWORD,thinkorswim
+DOMAIN-SUFFIX,tdameritrade.com
+DOMAIN-SUFFIX,tos.mx
+DOMAIN-SUFFIX,schwab.tech
 DOMAIN-SUFFIX,glance.net
+DOMAIN-SUFFIX,glancecdn.net
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,appdynamics.com
+DOMAIN,c.go-mpulse.net
+DOMAIN,s2.go-mpulse.net
+IP-CIDR,162.93.0.0/16,no-resolve
+IP-CIDR,74.114.36.0/22,no-resolve
 
 #银行
 DOMAIN-SUFFIX,hsbc.com
