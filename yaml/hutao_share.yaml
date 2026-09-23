@@ -1,40 +1,51 @@
 proxy-groups:
-  - {name: 🚀 默认代理, type: select, proxies: [♻️🇹🇼 台湾自动, ♻️🇭🇰 香港自动, ♻️🇯🇵 日本自动, ♻️🇸🇬 狮城自动, ♻️🇺🇸 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐🇺🇳 全部节点, DIRECT]}
   - {name: 📹 YouTube, type: select, proxies: [♻️🇹🇼 台湾自动, ♻️🇭🇰 香港自动, ♻️🇯🇵 日本自动, ♻️🇸🇬 狮城自动, ♻️🇺🇸 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐🇺🇳 全部节点, DIRECT]}
   - {name: 🍀 Google, type: select, proxies: [♻️🇹🇼 台湾自动, ♻️🇭🇰 香港自动, ♻️🇯🇵 日本自动, ♻️🇸🇬 狮城自动, ♻️🇺🇸 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐🇺🇳 全部节点, DIRECT]}
   - {name: ֍ OpenAI, type: select, proxies: [♻️🇹🇼 台湾自动, ♻️🇭🇰 香港自动, ♻️🇯🇵 日本自动, ♻️🇸🇬 狮城自动, ♻️🇺🇸 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐🇺🇳 全部节点, DIRECT]}
   - {name: 👨🏿‍💻 GitHub, type: select, proxies: [♻️🇹🇼 台湾自动, ♻️🇭🇰 香港自动, ♻️🇯🇵 日本自动, ♻️🇸🇬 狮城自动, ♻️🇺🇸 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐🇺🇳 全部节点, DIRECT]}
   - {name: 🐬 OneDrive, type: select, proxies: [♻️🇹🇼 台湾自动, ♻️🇭🇰 香港自动, ♻️🇯🇵 日本自动, ♻️🇸🇬 狮城自动, ♻️🇺🇸 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐🇺🇳 全部节点, DIRECT]}
   - {name: 🪟 Microsoft, type: select, proxies: [♻️🇹🇼 台湾自动, ♻️🇭🇰 香港自动, ♻️🇯🇵 日本自动, ♻️🇸🇬 狮城自动, ♻️🇺🇸 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐🇺🇳 全部节点, DIRECT]}
-  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 默认代理, ♻️🇹🇼 台湾自动, ♻️🇭🇰 香港自动, ♻️🇯🇵 日本自动, ♻️🇸🇬 狮城自动, ♻️🇺🇸 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐🇺🇳 全部节点, DIRECT]}
+  - {name: 🐟 漏网之鱼, type: select, proxies: [♻️🇹🇼 台湾自动, ♻️🇭🇰 香港自动, ♻️🇯🇵 日本自动, ♻️🇸🇬 狮城自动, ♻️🇺🇸 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐🇺🇳 全部节点, DIRECT]}
+
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?=.*(港|🇭🇰|(?i)HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?=.*(日|🇯🇵|(?i)JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$"}
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?=.*(新加坡|🇸🇬|坡|狮城|(?i)SG|(?i)Singapore))^((?!(港|台|韩|日|美)).)*$"}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?=.*(美|🇺🇸|(?i)US|(?i)States|(?i)America))^((?!(港|台|日|韩|新)).)*$"}
+
   - {name: ♻️🇭🇰 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|🇭🇰|(?i)HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
-  - {name: ♻️🇯🇵 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|🇯🇵|(?i)JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
-  - {name: ♻️🇸🇬 狮城自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新加坡|🇸🇬|坡|狮城|(?i)SG|(?i)Singapore))^((?!(港|台|韩|日|美)).)*$" }
+  - {name: ♻️🇯🇵 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|🇯🇵|(?i)JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$"}
+  - {name: ♻️🇸🇬 狮城自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新加坡|🇸🇬|坡|狮城|(?i)SG|(?i)Singapore))^((?!(港|台|韩|日|美)).)*$"}
   - {name: ♻️🇺🇸 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|🇺🇸|(?i)US|(?i)States|(?i)America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: ♻️🇹🇼 台湾自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|🇹🇼|(?i)TW|(?i)Taiwan))^((?!(美|US|States|America|港|日|韩|新)).)*$"}
+
   - {name: 🌐🇺🇳 全部节点, type: select, include-all: true}
+
 
 rules:
   - RULE-SET,private_ip,DIRECT,no-resolve
   - RULE-SET,private_domain,DIRECT
   - DOMAIN-SUFFIX,adobe.io,DIRECT
   - DOMAIN-SUFFIX,epicgame,DIRECT
-  - RULE-SET,proxylite,🚀 默认代理
+
+  - RULE-SET,proxylite,🐟 漏网之鱼
+
   - RULE-SET,ai,֍ OpenAI
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
   - RULE-SET,google_domain,🍀 Google
   - RULE-SET,onedrive_domain,🐬 OneDrive
   - RULE-SET,microsoft_domain,🪟 Microsoft
+
   - RULE-SET,apple_domain,DIRECT
   - RULE-SET,apple_ip,DIRECT
+
   - RULE-SET,google_ip,🍀 Google
+
+  - RULE-SET,geolocation-!cn,🐟 漏网之鱼
+
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
+
   - MATCH,🐟 漏网之鱼
 
 
@@ -42,19 +53,26 @@ rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
-rule-providers: 
-  private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
-  proxylite: { <<: *class, url: "https://raw.githubusercontent.com/HuTaoo29/Passwall/main/rules/proxy.list"}
-  ai: {  <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs" }
-  youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
-  google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
-  github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
-  onedrive_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
-  microsoft_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
-  apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"}
-  cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
-  
+
+
+rule-providers:
+  private_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
+
+  proxylite: {<<: *class, url: "https://raw.githubusercontent.com/HuTaoo29/Passwall/main/rules/proxy.list"}
+
+  ai: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs"}
+
+  youtube_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
+  google_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
+  github_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
+  onedrive_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
+  microsoft_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
+  apple_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"}
+
+  geolocation-!cn: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
+  cn_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
+
   private_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"}
-  cn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
-  google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
+  cn_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
+  google_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
   apple_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs"}
