@@ -28,4 +28,12 @@ IP-CIDR,74.114.36.0/22,no-resolve
 # 银行
 DOMAIN-SUFFIX,hsbc.com
 DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,bankofchina.com.hk
+DOMAIN-SUFFIX,bocpay.com.hk
+DOMAIN-SUFFIX,bochkonline.com
 DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,hangseng.com
+DOMAIN-SUFFIX,hangseng.com.cn
+DOMAIN-SUFFIX,hangseng.com.hk
+DOMAIN-SUFFIX,hangsengbank.com
+DOMAIN-SUFFIX,hangsengbank.com.hk
