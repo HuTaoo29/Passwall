@@ -2,6 +2,7 @@
 # 核心主站
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twitter.co
 DOMAIN-SUFFIX,t.co
 
 # 媒体与静态资源
@@ -33,6 +34,7 @@ DOMAIN-SUFFIX,twttr.net
 DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,twitter.map.fastly.net
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
 
 # 关键词
 DOMAIN-KEYWORD,twitter
