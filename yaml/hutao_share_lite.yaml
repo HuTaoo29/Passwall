@@ -1,3 +1,86 @@
+# 全局配置
+mode: rule
+mixed-port: 7893
+allow-lan: false
+bind-address: 127.0.0.1
+ipv6: false
+unified-delay: true
+tcp-concurrent: true
+log-level: warning
+find-process-mode: 'off'
+keep-alive-idle: 600
+keep-alive-interval: 15
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# 嗅探：沿用原设置
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+  force-domain:
+  - +.v2ex.com
+  skip-domain:
+  - +.baidu.com
+
+# TUN：沿用原配置，适用于由客户端接管 VPN/TUN 路由的使用方式。
+# 这三项 false 不是独立运行桌面内核的通用设置；不要在 iOS 照搬 Linux auto-redirect。
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  auto-route: false
+  auto-redirect: false
+  auto-detect-interface: false
+
+# DNS：default-nameserver 只负责 DNS 服务器域名的引导解析。
+# proxy-server-nameserver 解析节点域名，direct-nameserver 用于直连出口。
+# nameserver 的连接由 respect-rules 交给下方 proxylite 规则，不随“漏网之鱼”切换。
+dns:
+  enable: true
+  listen: 127.0.0.1:7874
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+  - '*.lan'
+  - '*.local'
+  - '*.arpa'
+  - localhost.ptlogin2.qq.com
+  - '*.msftncsi.com'
+  - www.msftconnecttest.com
+  - time.*.com
+  - ntp.*.com
+  - +.market.xiaomi.com
+  respect-rules: true
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  proxy-server-nameserver:
+  - https://doh.pub/dns-query#DIRECT
+  - https://dns.alidns.com/dns-query#DIRECT
+  nameserver:
+  - https://dns.google/dns-query
+  - https://cloudflare-dns.com/dns-query
+  direct-nameserver:
+  - https://doh.pub/dns-query#DIRECT
+  - https://dns.alidns.com/dns-query#DIRECT
 proxy-groups:
   - {name: "🇺🇸 美国手动", type: select, include-all: true, filter: "(?=.*(美|🇺🇸|(?i)US|(?i)States|(?i)America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: "🐟 漏网之鱼", type: select, proxies: [DIRECT, "🇺🇸 美国手动"]}
