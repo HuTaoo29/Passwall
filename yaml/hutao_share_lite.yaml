@@ -201,13 +201,14 @@ rules:
   - RULE-SET,private_ip,DIRECT,no-resolve
   - RULE-SET,private_domain,DIRECT
   - DOMAIN-SUFFIX,adobe.io,DIRECT
-  - DOMAIN-SUFFIX,epicgame,DIRECT
+  - DOMAIN-SUFFIX,epicgames.com,DIRECT
   - RULE-SET,proxylite,🇺🇸 美国手动
   - RULE-SET,bank,DIRECT
   - RULE-SET,ai,🇺🇸 美国手动
   - RULE-SET,apple_intelligence,🇺🇸 美国手动
   - RULE-SET,apns,🇺🇸 美国手动
   - RULE-SET,crypto,🇺🇸 美国手动
+  - RULE-SET,longbridge,🇺🇸 美国手动
   - RULE-SET,github_domain,🇺🇸 美国手动
   - RULE-SET,youtube_domain,🇺🇸 美国手动
   - RULE-SET,google_domain,🇺🇸 美国手动
@@ -215,11 +216,10 @@ rules:
   - RULE-SET,microsoft_domain,🇺🇸 美国手动
   - RULE-SET,apple_domain,DIRECT
   - RULE-SET,telegram_domain,🇺🇸 美国手动
+  - RULE-SET,cn_domain,DIRECT
+  - RULE-SET,geolocation-!cn,🇺🇸 美国手动
   - RULE-SET,apple_ip,DIRECT
   - RULE-SET,google_ip,🇺🇸 美国手动
   - RULE-SET,telegram_ip,🇺🇸 美国手动
-  - RULE-SET,longbridge,🇺🇸 美国手动
-  - RULE-SET,geolocation-!cn,🇺🇸 美国手动
-  - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
   - MATCH,🇺🇸 美国手动
