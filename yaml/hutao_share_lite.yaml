@@ -1,5 +1,5 @@
 proxy-groups:
-  - {name: "🇺🇸 美国手动", type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|🇺🇸|(?i)US|(?i)States|(?i)America))^((?!(港|台|日|韩|新)).)*$"}
+  - {name: "🇺🇸 美国手动", type: select, include-all: true, filter: "(?=.*(美|🇺🇸|(?i)US|(?i)States|(?i)America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: "🐟 漏网之鱼", type: select, proxies: [DIRECT, "🇺🇸 美国手动"]}
 
 rule-anchor:
