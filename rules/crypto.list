@@ -1,32 +1,3 @@
-DOMAIN-SUFFIX,bybit.com
-DOMAIN-SUFFIX,bytick.com
-DOMAIN-SUFFIX,bycsi.com
-DOMAIN-SUFFIX,byapis.com
-DOMAIN-SUFFIX,bycbe.com
-DOMAIN-SUFFIX,bymj.io
-DOMAIN-SUFFIX,byabcde.com
-DOMAIN-SUFFIX,byapps.net
-DOMAIN-SUFFIX,byd3c3.com
-DOMAIN-SUFFIX,bybit.biz
-DOMAIN-SUFFIX,bybdc6.com
-DOMAIN-SUFFIX,bybit-global.com
-DOMAIN-SUFFIX,bybit.cloud
-DOMAIN-SUFFIX,bybitglobal.com
-DOMAIN-SUFFIX,bybit.eu
-DOMAIN-SUFFIX,bybit.kz
-DOMAIN-SUFFIX,bybit.tr
-DOMAIN-SUFFIX,bybit.ae
-DOMAIN-SUFFIX,bybit.nl
-DOMAIN-SUFFIX,bybit.id
-DOMAIN,bybit-exchange.github.io
-DOMAIN,bybit.ada.support
-DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,oklink.com
-DOMAIN-SUFFIX,okx-dns.com
-DOMAIN-SUFFIX,okx-dns1.com
-DOMAIN-SUFFIX,okx-dns2.com
-DOMAIN-SUFFIX,okex.org
 # ========== Coinbase ==========
 DOMAIN-SUFFIX,coinbase.com
 DOMAIN-SUFFIX,coinbase.cloud
@@ -53,6 +24,29 @@ DOMAIN-SUFFIX,bnappzh.com
 DOMAIN-SUFFIX,saasexch.com
 DOMAIN-SUFFIX,nftstatic.com
 DOMAIN-KEYWORD,binance
+
+# ========== OKX ==========
+DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,okx.me
+DOMAIN-SUFFIX,okcoin.com
+DOMAIN-SUFFIX,okx.win
+DOMAIN-SUFFIX,okx-dns.com
+DOMAIN-SUFFIX,okx-dns1.com
+DOMAIN-SUFFIX,okx-dns2.com
+DOMAIN-KEYWORD,okx
+DOMAIN-KEYWORD,okex
+
+# ========== Bybit ==========
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybit.global
+DOMAIN-SUFFIX,bybit.me
+DOMAIN-SUFFIX,bybit.cloud
+DOMAIN-SUFFIX,bybitglobal.com
+DOMAIN-SUFFIX,bytick.com
+DOMAIN-SUFFIX,bycsi.com
+DOMAIN-SUFFIX,byapis.com
+DOMAIN-KEYWORD,bybit
 
 # ========== Crypto.com ==========
 DOMAIN-SUFFIX,crypto.com
