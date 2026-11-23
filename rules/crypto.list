@@ -27,3 +27,33 @@ DOMAIN-SUFFIX,okx-dns.com
 DOMAIN-SUFFIX,okx-dns1.com
 DOMAIN-SUFFIX,okx-dns2.com
 DOMAIN-SUFFIX,okex.org
+# ========== Coinbase ==========
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,coinbase.cloud
+DOMAIN-SUFFIX,coinbasepro.com
+DOMAIN-SUFFIX,coinbasecdn.net
+DOMAIN-SUFFIX,cstatic.us
+DOMAIN-KEYWORD,coinbase
+
+# ========== Binance ==========
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.us
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.net
+DOMAIN-SUFFIX,binance.org
+DOMAIN-SUFFIX,binance.vision
+DOMAIN-SUFFIX,binanceapi.com
+DOMAIN-SUFFIX,binance.charity
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,bnappzh.co
+DOMAIN-SUFFIX,bnappzh.com
+DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,nftstatic.com
+DOMAIN-KEYWORD,binance
+
+# ========== Crypto.com ==========
+DOMAIN-SUFFIX,crypto.com
+DOMAIN-KEYWORD,crypto.com
